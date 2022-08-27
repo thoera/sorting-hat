@@ -1,0 +1,15 @@
+# Bytecode
+**/__pycache__
+
+# Virtual environments
+.venv/
+venv/
+
+# Sphinx documentation
+doc/_build/
+
+# Unit testing
+**/.pytest_cache
+
+# VS Code settings
+**/.vscode/
