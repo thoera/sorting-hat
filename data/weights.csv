@@ -1,4 +1,4 @@
-question_id,variation_id,choice_id,house,weight
+question_id,item_id,answer_id,house,weight
 1,1,1,gryffondor,0
 1,1,1,poufsouffle,0
 1,1,1,serdaigle,1
