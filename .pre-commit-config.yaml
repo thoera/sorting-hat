@@ -38,11 +38,4 @@ repos:
     -   id: flake8
         name: flake8
         description: Your Tool For Style Guide Enforcement
-  - repo: local
-    hooks:
-      - id: pylint
-        name: pylint
-        description: Static code analyzer for Python
-        entry: pylint
-        language: system
-        types: [python]
+        args: ["--max-line-length", "88"]
