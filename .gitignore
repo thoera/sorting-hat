@@ -13,3 +13,7 @@ doc/_build/
 
 # VS Code settings
 **/.vscode/
+
+# Packaging
+*.egg-info/
+*.egg
