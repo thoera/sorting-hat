@@ -6,7 +6,7 @@ from src.sorting_hat import SortingHat
 
 @click.group()
 def cli() -> None:
-    "Creates a group of cli commands."
+    "Finds all the available commands below."
     pass
 
 
