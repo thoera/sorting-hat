@@ -11,7 +11,14 @@ La somme des points obtenus par chaque maison permet de déterminer l'affectatio
 
 # Installation
 
-Copier le package dans un répertoire et créez un nouvel environnement virtuel :
+Clonez le package dans un répertoire :
+
+```sh
+git clone git@github.com:thoera/sorting-hat.git
+cd sorting-hat
+```
+
+Créez un nouvel environnement virtuel :
 
 ```sh
 python3 -m venv venv
@@ -23,7 +30,7 @@ Activez ce nouvel environnement :
 . venv/bin/activate
 ```
 
-Installez le package :
+Installez le package (en ):
 
 ```sh
 pip install --editable .
