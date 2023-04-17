@@ -1,4 +1,4 @@
-question_id,item_id,item_text
+question_id,variation_id,variation_text
 1,1,"Sous quel nom préférerais-tu entrer dans l'histoire ?"
 1,2,"De quoi détesterais-tu le plus qu'on te traite ?"
 1,3,"S'il te fallait faire un choix, préférerais-tu inventer une potion te garantissant :"

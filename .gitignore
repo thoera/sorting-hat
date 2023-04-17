@@ -1,19 +1,16 @@
-# Bytecode
-**/__pycache__
+# Cache
+**/.cache/
+**/__pycache__/
 
 # Virtual environments
-.venv/
 venv/
 
 # Sphinx documentation
-doc/_build/
-
-# Unit testing
-**/.pytest_cache
+docs/_build
+docs/_static
 
 # VS Code settings
 **/.vscode/
 
 # Packaging
-*.egg-info/
-*.egg
+dist/

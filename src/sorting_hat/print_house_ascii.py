@@ -1,13 +1,16 @@
-"""This module prints the corresponding ascci art of one of the four houses."""
+"""This module defines a function to print the ASCII art for each house."""
 
 
 def print_house_ascii(house: str) -> None:
-    """Prints an ascii art for a given house.
+    """Prints an ASCII art for a given house.
 
     Args:
-        house: The house for which to get the ascii art.
+        house: The house for which to get the ASCII art.
     """
-    assert house in ("gryffondor", "poufsouffle", "serdaigle", "serpentard")
+    houses = ("gryffondor", "poufsouffle", "serdaigle", "serpentard")
+
+    if house not in houses:
+        raise ValueError(f"The house should be one of {', '.join(houses)}.")
 
     if house == "gryffondor":
         ascii_art = """

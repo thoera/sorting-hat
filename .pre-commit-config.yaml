@@ -1,41 +1,50 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       - id: check-yaml
         name: check-yaml
-        description: Attempt to load all yaml files to check the syntax
+        description: Attempt to load all yaml files to check the syntax.
       - id: end-of-file-fixer
         name: end-of-file-fixer
-        description: Make sure files end in a newline and only a newline
+        description: Make sure files end in a newline and only a newline.
+      - id: fix-encoding-pragma
+        name: fix-encoding-pragma
+        description: Remove the coding pragma.
+        args: [--remove]
       - id: mixed-line-ending
         name: mixed-line-ending
-        description: Replace or checks mixed line ending
+        description: Replace or checks mixed line ending.
         args: [--fix=lf]
       - id: trailing-whitespace
         name: trailing-whitespace
-        description: Trim trailing whitespace
+        description: Trim trailing whitespace.
       - id: check-merge-conflict
         name: check-merge-conflict
-        description: Check for files that contain merge conflict strings
+        description: Check for files that contain merge conflict strings.
   - repo: https://github.com/psf/black
-    rev: 22.6.0
+    rev: 23.3.0
     hooks:
       - id: black
         name: black
-        description: The uncompromising Python code formatter
-        args: [--line-length=79]
+        description: The uncompromising Python code formatter.
   - repo: https://github.com/pycqa/isort
-    rev: 5.10.1
+    rev: 5.12.0
     hooks:
       - id: isort
-        name: isort (python)
-        description: Sort imports alphabetically into sections and by type
-        args: ["--profile", "black", "--filter-files"]
-  - repo: https://github.com/pycqa/flake8
-    rev: 5.0.4
+        name: isort
+        description: Sort imports alphabetically into sections and by type.
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.261
     hooks:
-    -   id: flake8
-        name: flake8
-        description: Your Tool For Style Guide Enforcement
-        args: ["--max-line-length", "88"]
+      - id: ruff
+        name: ruff
+        description: An extremely fast Python linter, written in Rust.
+  - repo: https://github.com/econchick/interrogate
+    rev: 1.5.0
+    hooks:
+      - id: interrogate
+        name: interrogate
+        description: Check for missing docstrings.
+        args: [--quiet]
+        pass_filenames: false

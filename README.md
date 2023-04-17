@@ -2,10 +2,10 @@
 
 Les questions proviennent du site suivant : https://harrypotter.fandom.com/fr/wiki/Pottermore/R%C3%A9partition
 
-Le quiz comporte sept questions. Chaque question possède plusieurs variations possibles (de trois à six).
-Pour décider de l'affectation d'une personne à une maison, une seule variation de chaque question est proposée.
+Le quiz comporte sept questions. Chaque question possède plusieurs variations (de trois à six).
+Pour décider de l'affectation d'une personne à une maison, une seule variation de chaque question est posée dans la version classique du quiz.
 
-Certaines réponses sont exclusives à une maison donnée tandis que d'autres peuvent être associées à plusieurs maisons.
+Certaines réponses sont exclusives à une maison tandis que d'autres peuvent être associées à plusieurs maisons.
 
 La somme des points obtenus par chaque maison permet de déterminer l'affectation du choixpeau magique !
 
@@ -33,10 +33,12 @@ pip install --editable .
 
 L'utilisation se fait via la ligne de commande.
 
-Pour lancer la répartition, il suffit d'utiliser la commande suivante :
+Pour lancer la répartition du choixpeau, utilisez la commande suivante :
 
 ```sh
 sorting-hat sort
 ```
 
 Répondez ensuite aux sept questions pour connaître votre maison !
+
+> Note : Il est possible de jouer à une version longue du quiz avec l'ensemble des variations de chaque question en utilisant le flag `--long-quiz`.
