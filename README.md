@@ -30,7 +30,7 @@ Activez ce nouvel environnement :
 . venv/bin/activate
 ```
 
-Installez le package (en ):
+Installez le package (en mode développement) :
 
 ```sh
 pip install --editable .
